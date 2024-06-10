@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <!-- website font  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+
+      <!-- Navbar 2 Start -->
+    <section id="Nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="imgs/logo.png" width="18%"></img>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link selected" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests.html">Donations</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="btn signup" onclick= "window.location.href = 'signup.html';" >New Account</button>
+                <button class="btn login" onclick= "window.location.href = 'login.html';">Login</button>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar 2 End -->
+    <!-- Navigator Start -->
+ 
+
+    <!-- Sign Up Start -->
+    <section id="sign-up">
+        <div class="container">
+                <img src="imgs/logo.png" style="width: 130px; margin-left: 40px; margin-bottom: 50px;" alt="">
+                <h2 class="sign-up">Sign UP</h2>
+                <form action="submit">
+                    <input type="name" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="date" name="bday" placeholder="Birth date">
+                    <select name="type" id="type" required="">
+                        <option value="Blood Type" disabled>Blood Type</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="O">O</option>
+                        <option value="AB+">AB+</option>
+                    </select>
+                    <select name="Gov" id="Gov" required="">
+                        <option value="Governorate" disabled>Governorate</option>
+                        <option value="A">Alexandria</option>
+                        <option value="B">Cairo</option>
+                        <option value="O">Giza</option>
+                        <option value="AB+">Fayoum</option>
+                    </select>
+                    <input type="Phone" placeholder="Phone Number" required="">
+                    <input type="date" name="donate-day">
+                    <div class="reg-group">
+                         
+                        <button class="submit" type="submit" >Submit</button>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <!-- Sign Up End -->
+
+      	<!-- footer section start -->
+          
+    <footer>
+
+
+      
+        
+       
+     
+        <div class="footer-container">
+            <div class="footer-subscription animate-on-scroll">
+              <div class="container1"><div class="ttitle">
+              <h4>Life Source Blood Bank</h4>
+            </div>
+            <div class="ghost">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+              </div>
+                <!-- <h3>Subscribe to our Newsletter</h3> -->
+                <form id="subscription-form">
+                     
+                </form>
+            </div>
+            <div class="footer-content animate-on-scroll">
+                <ul class="socials">
+                    <li><a href="https://facebook.com" class="animate-on-scroll"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com" class="animate-on-scroll"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com" class="animate-on-scroll"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com" class="animate-on-scroll"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://youtube.com" class="animate-on-scroll"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom animate-on-scroll">
+                <p>© 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+    <script>
+        // Scroll to top button
+        const scrollToTopButton = document.createElement('div');
+        scrollToTopButton.innerHTML = '<i class="fa fa-chevron-up"></i>';
+        scrollToTopButton.classList.add('scroll-to-top');
+        document.body.appendChild(scrollToTopButton);
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.classList.add('show');
+            } else {
+                scrollToTopButton.classList.remove('show');
+            }
+        });
+
+        // Newsletter subscription form
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            alert(`Thank you for subscribing with ${email}!`);
+            document.getElementById('subscription-form').reset();
+        });
+
+        // Animations on scroll
+        const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.animation = 'fadeInUp 1s forwards';
+                    entry.target.classList.remove('animate-on-scroll');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        elementsToAnimate.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Add bounce effect on social icons click
+        const socialIcons = document.querySelectorAll('.socials a');
+        socialIcons.forEach(icon => {
+            icon.addEventListener('click', (event) => {
+                event.preventDefault();
+                icon.classList.add('bounce-in');
+                setTimeout(() => {
+                    icon.classList.remove('bounce-in');
+                    window.open(icon.href, '_blank');
+                }, 600); // Duration of the bounce animation
+            });
+        });
+    </script>
+
+        <!-- footer section end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

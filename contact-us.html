@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <!-- website font  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Contact Us</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+  
+    .header {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+  
+    .header .logo {
+        font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+  
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+  
+    .contact-section {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .contact-details,
+    .contact-form {
+        flex: 1;
+        min-width: 300px;
+        margin: 10px;
+    }
+  
+    .contact-details h2,
+    .contact-form h2 {
+        color: #e74c3c;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+  
+    .contact-details p {
+        margin: 10px 0;
+    }
+  
+    .contact-details address {
+        font-style: normal;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+  
+    .contact-form button {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+  
+    .contact-form button:hover {
+        background-color: #c0392b;
+    }
+  
+    .map {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+  
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+  </style>
+
+<body>
+
+ 
+  <!-- Navbar 2 Start -->
+  <section id="Nav2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="imgs/logo.png" width="18%"></img>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link selected" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="article.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="requests.html">Donations</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+            <button class="btn signup" onclick= "window.location.href = 'signup.html';">New Account</button>
+            <button class="btn login" onclick= "window.location.href = 'login.html';">Login</button>
+        </div>
+    </nav>
+</section>
+<!-- Navbar 2 End -->
+   
+     
+
+    <div class="container">
+        <section class="contact-section">
+            <div class="contact-details">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong></p>
+                <address>
+                    Red Stream, Vaikom Road, Near Thalook Headquarters,<br>
+                    Kottayam, Kerala, IN<br>
+                    Pin 686141
+                </address>
+                <p><strong>Contact Details:</strong></p>
+                <p>MOBILE: +91 7558 9513 51</p>
+                <p>TELEPHONE: 0484-292674</p>
+                <p>EMAIL: <a href="mailto:redstream001@gmail.com">redstream001@gmail.com</a></p>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="" method="POST">
+                    <input type="email" name="email_address" placeholder="Your Email Address..." required>
+                    <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+  
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.76164524118906!2d76.39003912368983!3d9.750279515331268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08790da3aa8ec7%3A0x58b351f9df4075a3!2sBlood%20Storage%20Center!5e0!3m2!1sen!2sin!4v1689507408879!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   
+
+
+ 	
+    <footer>
+
+
+      
+        
+       
+     
+        <div class="footer-container">
+            <div class="footer-subscription animate-on-scroll">
+              <div class="container1"><div class="ttitle">
+              <h4>Life Source Blood Bank</h4>
+            </div>
+            <div class="ghost">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+              </div>
+                <!-- <h3>Subscribe to our Newsletter</h3> -->
+                <form id="subscription-form">
+                     
+                </form>
+            </div>
+            <div class="footer-content animate-on-scroll">
+                <ul class="socials">
+                    <li><a href="https://facebook.com" class="animate-on-scroll"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com" class="animate-on-scroll"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com" class="animate-on-scroll"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com" class="animate-on-scroll"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://youtube.com" class="animate-on-scroll"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom animate-on-scroll">
+                <p>© 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+    <script>
+        // Scroll to top button
+        const scrollToTopButton = document.createElement('div');
+        scrollToTopButton.innerHTML = '<i class="fa fa-chevron-up"></i>';
+        scrollToTopButton.classList.add('scroll-to-top');
+        document.body.appendChild(scrollToTopButton);
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.classList.add('show');
+            } else {
+                scrollToTopButton.classList.remove('show');
+            }
+        });
+
+        // Newsletter subscription form
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            alert(`Thank you for subscribing with ${email}!`);
+            document.getElementById('subscription-form').reset();
+        });
+
+        // Animations on scroll
+        const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.animation = 'fadeInUp 1s forwards';
+                    entry.target.classList.remove('animate-on-scroll');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        elementsToAnimate.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Add bounce effect on social icons click
+        const socialIcons = document.querySelectorAll('.socials a');
+        socialIcons.forEach(icon => {
+            icon.addEventListener('click', (event) => {
+                event.preventDefault();
+                icon.classList.add('bounce-in');
+                setTimeout(() => {
+                    icon.classList.remove('bounce-in');
+                    window.open(icon.href, '_blank');
+                }, 600); // Duration of the bounce animation
+            });
+        });
+    </script>
+
+    <!-- footer section end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
